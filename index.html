@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email/SMS Spam Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email/SMS Spam Classifier</h1>
+        <textarea id="message" placeholder="Enter the message"></textarea>
+        <button onclick="predictSpam()">Predict</button>
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        async function predictSpam() {
+            const message = document.getElementById('message').value;
+            const resultElement = document.getElementById('result');
+
+            if (!message) {
+                resultElement.textContent = "Please enter a message.";
+                return;
+            }
+
+            const response = await fetch('http://localhost:5000/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: message })
+            });
+
+            const data = await response.json();
+            resultElement.textContent = data.result;
+        }
+    </script>
+</body>
+</html>

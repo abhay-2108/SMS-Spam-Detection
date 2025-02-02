@@ -1,0 +1,88 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eceff1, #90caf9);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Centered container with a modern card design */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the container */
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading styling */
+h1 {
+    color: #1a237e;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Stylish textarea */
+textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #b0bec5;
+    border-radius: 8px;
+    resize: vertical;
+    transition: border 0.3s ease;
+}
+
+/* Focus effect for the textarea */
+textarea:focus {
+    border: 1px solid #1e88e5;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(30, 136, 229, 0.2);
+}
+
+/* Button styling with modern effects */
+button {
+    background: linear-gradient(90deg, #1e88e5, #1565c0);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background: linear-gradient(90deg, #1565c0, #0d47a1);
+    transform: translateY(-3px);
+}
+
+/* Button click effect */
+button:active {
+    transform: translateY(1px);
+}
+
+/* Result text styling */
+h2 {
+    margin-top: 25px;
+    color: #1a237e;
+    font-size: 22px;
+}
