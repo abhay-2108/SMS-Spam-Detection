@@ -1,0 +1,23 @@
+## Required Libraries for SMS Spam Detection Project
+
+Below is the list of essential libraries required for running the SMS Spam Detection project. Install these dependencies using pip before executing the scripts.
+
+### Installation Command:
+```bash
+pip install numpy pandas scikit-learn matplotlib seaborn nltk flask flask-cors jupyter
+```
+
+### Library Descriptions:
+
+1. numpy - Provides support for numerical computations and efficient array operations.
+2. pandas - Essential for data manipulation and analysis, used for handling structured data.
+3. scikit-learn - Machine learning library that provides tools for preprocessing, model building, and evaluation.
+4. matplotlib - Used for visualizing data distributions, model performance, and other analytics.
+5. seaborn - Built on top of matplotlib, enhances data visualization with aesthetically pleasing and informative plots.
+6. nltk - Natural Language Toolkit, crucial for text preprocessing tasks such as tokenization and stemming.
+7. flask - Lightweight web framework for deploying the SMS spam detection model as a web application.
+8. flask-cors - Enables Cross-Origin Resource Sharing (CORS) to allow frontend-backend communication.
+9. jupyter - Provides an interactive environment for writing and testing code in Jupyter Notebooks.
+
+Make sure all these libraries are installed to ensure smooth execution of the project. If any issues arise, check for compatibility and update the libraries accordingly.
+
